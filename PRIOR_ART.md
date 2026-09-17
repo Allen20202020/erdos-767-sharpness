@@ -19,8 +19,8 @@ already formalizes Jiang's equality when n ≥ 3k+3. Its lower construction
 is the complete bipartite graph with side sizes k+1 and n−k−1. We explicitly
 acknowledge that result despite the award catalog still saying Lean proof: No.
 
-The existing source contains 1,579 lines in the root module and accompanying
-graph lemmas. Its root module was inspected; it credits Tao Jiang and states
+The existing root module and its lower-construction argument were inspected.
+The source credits Tao Jiang and states
 the 3k+3 threshold. It does not implement the new matching-join witness at
 the critical order ceil((5k+1)/2)−1. This package provides that witness, its
 exact edge count, and its avoidance proof. It does not present Jiang's
