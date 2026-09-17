@@ -38,8 +38,11 @@ closures against `propext`, `Classical.choice`, and `Quot.sound`, and runs
 `leanchecker --fresh --verbose JSP628.Sharpness`.
 
 The GitHub workflow additionally requests an audit of every declaration in
-the JSP628 namespace and the independent Rust type checker
-[NaNoda](https://github.com/ammkrn/nanoda_lib), with sorry disallowed. See the
+the JSP628 namespace and a commit-pinned independent Rust type checker
+[NaNoda](https://github.com/ammkrn/nanoda_lib), with unpermitted axioms treated as errors and sorry excluded. Imported
+Mathlib declarations may use `Lean.trustCompiler` in this export check; the
+separate namespace audit allows only the three core axioms for our proofs
+and their complete dependency closures. See the
 actual workflow run for its result; merely configuring a check is not
 evidence that it passed.
 

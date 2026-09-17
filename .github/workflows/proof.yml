@@ -15,9 +15,10 @@ jobs:
           auto-config: false
           build: true
           leanchecker: true
+          leanchecker-args: "--verbose JSP628"
           axiom-audit: true
           axiom-audit-root: JSP628
-          nanoda: true
-          nanoda-allow-sorry: false
+      - name: Independent NaNoda check
+        run: bash .github/scripts/nanoda.sh
       - name: Expanded statement and six axiom closures
         run: lake env lean -DwarningAsError=true Audit.lean
