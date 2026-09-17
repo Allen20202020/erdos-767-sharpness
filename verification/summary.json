@@ -1,0 +1,69 @@
+{
+  "verified_at_utc": "2026-09-17T07:35:54.788051+00:00",
+  "checks": [
+    {
+      "name": "lean-version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "--verbose",
+        "JSP628.Sharpness"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "axiom_reports": {
+    "JSP628.join_matching_avoids": "propext, Classical.choice, Quot.sound",
+    "JSP628.construction_avoids": "propext, Classical.choice, Quot.sound",
+    "JSP628.construction_edges": "propext, Classical.choice, Quot.sound",
+    "JSP628.construction_spec": "propext, Classical.choice, Quot.sound",
+    "JSP628.critical_arithmetic": "propext, Classical.choice, Quot.sound",
+    "JSP628.threshold_sharpness": "propext, Classical.choice, Quot.sound"
+  },
+  "source_sha256": {
+    "JSP628.lean": "365dc4d5e988fef2b3f06b9cd47fbf3072a432604d52d221bb79f2fc870fafd3",
+    "JSP628/Sharpness.lean": "86f0b3053be2f29b21bb3c88d487fc9fd1d53ba58e94d76cb8001e9dd30b7931",
+    "Audit.lean": "e45790127de8745488fc8c5727ef5ab2966cdc7f44cfbe74560ad9c50cd5aafb",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "31d6394b9488a561e90e511472c5ae4e485c5986033ee209f99a1216211cdf81",
+    "lake-manifest.json": "680cbd913db08aa52e076a24eaf2d3d619fb0fab11979c9b7de90fad6cc8f450",
+    "verify.py": "fd87e9422bfe683e16c14c3c2afa5d5facfe2517098e253a63ad69b2425ed176"
+  },
+  "limitations": [
+    "Contributor-run checks; not organizer verification",
+    "leanchecker uses the official Lean kernel implementation",
+    "Imported dependencies use compiled Mathlib caches; no full source rebuild",
+    "This is the sharpness component, not the full extremal formula"
+  ]
+}

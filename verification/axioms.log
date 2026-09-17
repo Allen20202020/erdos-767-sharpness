@@ -1,0 +1,8 @@
+JSP628.threshold_sharpness (k : ℕ) (hk : 2 ≤ k) :
+  ∃ G, ¬JSP628.HasCycleWithKIncidentChords k G ∧ G.edgeSet.ncard = (k + 1) * (JSP628.criticalOrder k - k - 1) + 1
+'JSP628.join_matching_avoids' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP628.construction_avoids' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP628.construction_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP628.construction_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP628.critical_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP628.threshold_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]

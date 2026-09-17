@@ -1,0 +1,13 @@
+JSP-000628 / Erdős 767 sharpness formalization
+Copyright 2026 Allen20202020. Apache License 2.0.
+
+Contains adaptations of the forbidden-configuration predicate,
+selected-neighbour lemmas and graph-embedding chord transport from:
+plby/lean-proofs, 8822f7ddef30fadbd92e1c6ab4ed897af356af5e,
+src/latest/ErdosProblems/Erdos767.lean.
+Copyright 2026 The Lean-Proofs Authors. Apache License 2.0.
+Original formal authors identified in that source: Codex and GPT-5.6 Sol.
+
+Mathematical attribution for Construction 3.3 and Remark 3.4:
+Xiaozheng Chen and Bo Ning, arXiv:2609.15330v1 (2026).
+Mathematical attribution for the prior 3k+3 equality theorem: Tao Jiang (2004).
