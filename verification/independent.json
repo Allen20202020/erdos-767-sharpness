@@ -1,0 +1,48 @@
+{
+  "verified_at_utc": "2026-09-17T07:50:00.615906+00:00",
+  "command": [
+    "bash",
+    ".github/scripts/nanoda.sh"
+  ],
+  "exit_code": 0,
+  "checker": "NaNoda independent Rust implementation",
+  "checker_commit": "e5438ac0a85a036b6dfe093aa457bc3448498014",
+  "exporter_commit": "bd93e5ed12fbeea19f39ec3ead659c293b2b8a95",
+  "exporter_toolchain": "leanprover/lean4:v4.34.0",
+  "rust_version": "rustc 1.98.1 (48a229cea 2026-09-01)",
+  "cargo_version": "cargo 1.98.1 (797e8a9bc 2026-08-05)",
+  "export_format": "2.0.0",
+  "checked_declarations": 8514,
+  "export_sha256": "00f8f9d2e94cf22f4d6dfd2dac6f2d703c8a7a615bd1d8a39764166da8c8e753",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "roots": [
+    "JSP628.join_matching_avoids",
+    "JSP628.construction_avoids",
+    "JSP628.construction_edges",
+    "JSP628.construction_spec",
+    "JSP628.critical_arithmetic",
+    "JSP628.threshold_sharpness",
+    "String.mk",
+    "Char.ofNat"
+  ],
+  "scope": "Selected results and full transitive proof dependencies, plus implicit string-literal primitives; unrelated imported declarations are excluded.",
+  "source_sha256": {
+    "JSP628.lean": "365dc4d5e988fef2b3f06b9cd47fbf3072a432604d52d221bb79f2fc870fafd3",
+    "JSP628/Sharpness.lean": "86f0b3053be2f29b21bb3c88d487fc9fd1d53ba58e94d76cb8001e9dd30b7931",
+    "Audit.lean": "e45790127de8745488fc8c5727ef5ab2966cdc7f44cfbe74560ad9c50cd5aafb",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "31d6394b9488a561e90e511472c5ae4e485c5986033ee209f99a1216211cdf81",
+    "lake-manifest.json": "680cbd913db08aa52e076a24eaf2d3d619fb0fab11979c9b7de90fad6cc8f450",
+    ".github/scripts/nanoda.sh": "ff253d24772f4119a36971ba1767c3ee870417b63181418225998d679c3df878"
+  },
+  "limitations": [
+    "Contributor-run check; not organizer verification",
+    "Imported compiled Mathlib caches; no full dependency source rebuild",
+    "Independent checker output does not replace human statement review"
+  ]
+}

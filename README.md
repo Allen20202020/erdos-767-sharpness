@@ -39,12 +39,17 @@ closures against `propext`, `Classical.choice`, and `Quot.sound`, and runs
 
 The GitHub workflow additionally requests an audit of every declaration in
 the JSP628 namespace and a commit-pinned independent Rust type checker
-[NaNoda](https://github.com/ammkrn/nanoda_lib), with unpermitted axioms treated as errors and sorry excluded. Imported
-Mathlib declarations may use `Lean.trustCompiler` in this export check; the
-separate namespace audit allows only the three core axioms for our proofs
-and their complete dependency closures. See the
-actual workflow run for its result; merely configuring a check is not
-evidence that it passed.
+[NaNoda](https://github.com/ammkrn/nanoda_lib), with unpermitted axioms treated
+as errors and only the three core axioms allowed. The six selected results
+and their full transitive proof dependencies, plus the implicit string-literal
+primitives, are exported in the compatible 2.0.0 format. Unrelated imported
+declarations are outside this independent check. The reproducible local
+independent check passed for 8,514 declarations; its tool commits, input hash
+and log are recorded in [independent.json](verification/independent.json).
+
+To repeat that check, install Rust/Cargo and run
+`bash .github/scripts/nanoda.sh`. See the actual GitHub workflow run for its
+online result; a configured workflow is not itself evidence of success.
 
 ## Proof and evidence
 
