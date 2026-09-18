@@ -1,0 +1,10 @@
+ℹ [8717/8736] Replayed ErdosProblems.Erdos767.Aligned
+info: ErdosProblems/Erdos767/Aligned.lean:1050:0: 'E767AlignedAlt.exists_alignedFan' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8732/8736] Replayed ErdosProblems.Erdos767.Dirac
+info: ErdosProblems/Erdos767/Dirac.lean:118:0: 'Erdos767Dirac.diracCircumferencePrinciple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosProblems/Erdos767/Dirac.lean:119:0: 'Erdos767Dirac.erdosGallai_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosProblems/Erdos767/Dirac.lean:120:0: 'Erdos767Dirac.exists_nonspanning_longestCycle_lowDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosProblems/Erdos767/Dirac.lean:121:0: 'Erdos767Dirac.exists_cycle_length_ge_min_card_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8733/8736] Replayed ErdosProblems.Erdos767
+info: ErdosProblems/Erdos767.lean:1579:0: 'Erdos767.erdos_767' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8736 jobs).

@@ -1,0 +1,29 @@
+name: Complete original proof and stabilization bounds
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Retrieve hash-pinned credited proof
+        run: python3 complete/scripts/fetch_upstream.py
+      - uses: leanprover/lean-action@50fcf42d2e460296f1a34b402e990d1b24f8b596
+        env:
+          LEAN_NUM_THREADS: "1"
+        with:
+          lake-package-directory: complete
+          auto-config: false
+          build: true
+          leanchecker: true
+          leanchecker-args: "--verbose JSP628Full"
+          axiom-audit: true
+          axiom-audit-root: JSP628Full
+      - name: Full verification and project kernel replay
+        working-directory: complete
+        run: python3 verify.py
+      - name: Independent NaNoda check
+        working-directory: complete
+        run: bash scripts/nanoda.sh

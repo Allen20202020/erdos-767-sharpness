@@ -1,0 +1,49 @@
+{
+  "verified_at_utc": "2026-09-18T02:41:56.606266+00:00",
+  "checker": "NaNoda",
+  "checker_commit": "e5438ac0a85a036b6dfe093aa457bc3448498014",
+  "exporter": "lean4export",
+  "exporter_commit": "bd93e5ed12fbeea19f39ec3ead659c293b2b8a95",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "declarations_checked": 12952,
+  "roots": [
+    "JSP628.join_matching_avoids",
+    "JSP628.construction_avoids",
+    "JSP628.construction_edges",
+    "JSP628.construction_spec",
+    "JSP628.critical_arithmetic",
+    "JSP628.threshold_sharpness",
+    "JSP628Full.original_resolution",
+    "JSP628Full.predicate_iff",
+    "JSP628Full.critical_extremal_strict",
+    "JSP628Full.stabilizingThreshold_spec",
+    "JSP628Full.every_threshold_lower",
+    "JSP628Full.stabilization_bounds"
+  ],
+  "additional_primitive_roots": [
+    "String.mk",
+    "Char.ofNat"
+  ],
+  "export_sha256": "f743c64cd7e443c22778da87bbb11ad2708d90fe02a43822b1f193c006bbf0bf",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "source_sha256": {
+    "JSP628Full.lean": "fc036cf78f6978d5ca51f4d172c485851c137ff9c8b927f2f0837e9a65f94251",
+    "JSP628Full/Main.lean": "b30039d9ca82c3ef286a6b94fccfe14a6f24e6c1a8f6c1f012911cf6309fe366",
+    "JSP628Full/Sharpness.lean": "86f0b3053be2f29b21bb3c88d487fc9fd1d53ba58e94d76cb8001e9dd30b7931",
+    "upstream-lock.json": "caeae1e9cf2104d09ec933acde440050181bbb518cdb3ec04183dfa17b0443cd",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "6275c2dd97fc531973c8b49883cd640e11b68c8fb01b36fe99eb34b69e6cf5a0",
+    "lake-manifest.json": "d31828183e944c0a84d87431caf8c538778406e190059e240147ab529d3f11b6",
+    "scripts/nanoda.sh": "5743a0b5df08533dba21a6a586f738d839f81dc1af207ed24241163e40a5e239"
+  },
+  "limitations": [
+    "Contributor-run check; not an independent human or organizer review",
+    "Selected theorem closures and complete transitive dependencies, not every unrelated imported declaration",
+    "The complete original forcing formalization is credited prior work"
+  ]
+}

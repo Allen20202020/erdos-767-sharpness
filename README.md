@@ -1,5 +1,7 @@
 # JSP-000628 / Erdős 767: threshold sharpness
 
+**Complete original proof package:** [complete/README.md](complete/README.md) explicitly reuses the credited Jiang solution and adds new bounds on the least stabilization threshold. The root package below retains its narrower sharpness scope.
+
 This package formalizes **Construction 3.3 with a = k and Remark 3.4** of
 Xiaozheng Chen and Bo Ning, *On Erdős Problem 767: Cycles with Chords*,
 [arXiv:2609.15330v1](https://arxiv.org/html/2609.15330v1), 14 September 2026.

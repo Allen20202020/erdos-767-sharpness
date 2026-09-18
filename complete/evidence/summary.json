@@ -1,0 +1,85 @@
+{
+  "verified_at_utc": "2026-09-18T02:47:37.919813+00:00",
+  "checks": [
+    {
+      "name": "upstream",
+      "command": [
+        "python3",
+        "scripts/fetch_upstream.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "lean-version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "JSP628Full"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "axiom_reports": {
+    "JSP628.join_matching_avoids": "propext, Classical.choice, Quot.sound",
+    "JSP628.construction_avoids": "propext, Classical.choice, Quot.sound",
+    "JSP628.construction_edges": "propext, Classical.choice, Quot.sound",
+    "JSP628.construction_spec": "propext, Classical.choice, Quot.sound",
+    "JSP628.critical_arithmetic": "propext, Classical.choice, Quot.sound",
+    "JSP628.threshold_sharpness": "propext, Classical.choice, Quot.sound",
+    "JSP628Full.original_resolution": "propext, Classical.choice, Quot.sound",
+    "JSP628Full.predicate_iff": "propext, Classical.choice, Quot.sound",
+    "JSP628Full.critical_extremal_strict": "propext, Classical.choice, Quot.sound",
+    "JSP628Full.stabilizingThreshold_spec": "propext, Classical.choice, Quot.sound",
+    "JSP628Full.every_threshold_lower": "propext, Classical.choice, Quot.sound",
+    "JSP628Full.stabilization_bounds": "propext, Classical.choice, Quot.sound"
+  },
+  "source_sha256": {
+    "JSP628Full.lean": "fc036cf78f6978d5ca51f4d172c485851c137ff9c8b927f2f0837e9a65f94251",
+    "JSP628Full/Main.lean": "b30039d9ca82c3ef286a6b94fccfe14a6f24e6c1a8f6c1f012911cf6309fe366",
+    "JSP628Full/Sharpness.lean": "86f0b3053be2f29b21bb3c88d487fc9fd1d53ba58e94d76cb8001e9dd30b7931",
+    "Audit.lean": "95d0c188e6a1c87682def4d517a2586d2613c1f687fd343c4025b1fb6589e7cb",
+    "upstream-lock.json": "caeae1e9cf2104d09ec933acde440050181bbb518cdb3ec04183dfa17b0443cd",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "6275c2dd97fc531973c8b49883cd640e11b68c8fb01b36fe99eb34b69e6cf5a0",
+    "lake-manifest.json": "d31828183e944c0a84d87431caf8c538778406e190059e240147ab529d3f11b6",
+    "verify.py": "c88eab8bf28ddb64cd68f307cb0418c794ac4179e3cfd028db5ccc2c36b22c54",
+    "scripts/fetch_upstream.py": "900c1efa1ba39e3db6c152b9324bd866c001a6794bd5ec3eb70969ae9d47fa31"
+  },
+  "limitations": [
+    "Contributor-run checks, not organizer or independent human verification",
+    "leanchecker uses the official Lean kernel",
+    "Cached imported dependencies; no full Mathlib source rebuild",
+    "The forcing proof is credited prior work; the sharpness and least stabilization threshold bounds are the new contribution"
+  ]
+}

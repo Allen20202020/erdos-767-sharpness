@@ -1,0 +1,6 @@
+HEAD is now at bd93e5e Merge pull request #11 from kim-em/fix-nondep-normalization
+M	lean-toolchain
+Build completed successfully (6 jobs).
+HEAD is now at e5438ac Test adjustment for String.mk redefinition
+    Finished `release` profile [optimized] target(s) in 0.07s
+Checked 12952 declarations with no errors

@@ -1,0 +1,116 @@
+{
+  "repository": "https://github.com/plby/lean-proofs",
+  "branch": "main",
+  "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "source_prefix": "src/latest/",
+  "modules": {
+    "ErdosProblems.Erdos767": {
+      "path": "ErdosProblems/Erdos767.lean",
+      "sha256": "45cefec4194a1369cde8bde6b1f69e944b220e8124bd912a220690e420936f4d"
+    },
+    "ErdosProblems.Erdos767.Dirac": {
+      "path": "ErdosProblems/Erdos767/Dirac.lean",
+      "sha256": "5616d24000b3372c0344e6779ab59da45bec8c777f39b419e0ef71af7976227e"
+    },
+    "ErdosProblems.Erdos767.ErdosGallai": {
+      "path": "ErdosProblems/Erdos767/ErdosGallai.lean",
+      "sha256": "dd92dac08d8cb76167da86cad3c572eb8bf98be7e8ec9eadeee5104ce808893b"
+    },
+    "ErdosProblems.Erdos767.EGApi": {
+      "path": "ErdosProblems/Erdos767/EGApi.lean",
+      "sha256": "e452489ca1f08513d886c56b581e861f4a4fae2bf2998718a87c47548d150bcd"
+    },
+    "ErdosProblems.Erdos767.RelativeLowDegree": {
+      "path": "ErdosProblems/Erdos767/RelativeLowDegree.lean",
+      "sha256": "5978e9256593e1ec4af238199b38e60b332c695e7d205b17c78a429a8be107b3"
+    },
+    "ErdosProblems.Erdos767.Case2Splice": {
+      "path": "ErdosProblems/Erdos767/Case2Splice.lean",
+      "sha256": "94f741ef5681ff9cf20ce814a7ca4450dca00191b4c9f88e91022356d1aca5a2"
+    },
+    "ErdosProblems.Erdos767.Case2LongArc": {
+      "path": "ErdosProblems/Erdos767/Case2LongArc.lean",
+      "sha256": "de584d4e2f39b857a4edc635893073607b8b8e9c00f5e4161d3a580b01ac453d"
+    },
+    "ErdosProblems.Erdos58.CycleArcs": {
+      "path": "ErdosProblems/Erdos58/CycleArcs.lean",
+      "sha256": "0ae0be796674aa355987610e23ca3653f20c5cf01bb415d244c739f476bd3b02"
+    },
+    "ErdosProblems.Erdos58.Basic": {
+      "path": "ErdosProblems/Erdos58/Basic.lean",
+      "sha256": "257454c90f3e190e7ae2451ee20b65ed7d9523f5c5aedcc0e73b0af913f52b9e"
+    },
+    "ErdosProblems.Erdos767.Case2Assembly": {
+      "path": "ErdosProblems/Erdos767/Case2Assembly.lean",
+      "sha256": "1041fffd2e0ba546aa673f71dc63c38b7dc1ee89d6680f981a120e4321559cb6"
+    },
+    "ErdosProblems.Erdos767.Case2EqualA": {
+      "path": "ErdosProblems/Erdos767/Case2EqualA.lean",
+      "sha256": "582d18a6d60ddb2cb8a54e6c42931099f3d54dd959962e245f24399b174ff30e"
+    },
+    "ErdosProblems.Erdos767.WalkIndex": {
+      "path": "ErdosProblems/Erdos767/WalkIndex.lean",
+      "sha256": "ba47272b625c71615e638a350c09f55a300a43d34dbfb90132360ef07202c588"
+    },
+    "ErdosProblems.Erdos767.Case1Geometry": {
+      "path": "ErdosProblems/Erdos767/Case1Geometry.lean",
+      "sha256": "951e45831da09441b2c6f29a2e1cdcf86313d8e19e13179b0439493c81a07f57"
+    },
+    "ErdosProblems.Erdos767.Aligned": {
+      "path": "ErdosProblems/Erdos767/Aligned.lean",
+      "sha256": "16614b581420e6b52d87f70ad26b3c7cb6af02adc3176e276264c22d8a56047a"
+    },
+    "ErdosProblems.Erdos58.Menger": {
+      "path": "ErdosProblems/Erdos58/Menger.lean",
+      "sha256": "a94c201065502712219d4ffd1d94fe257894d6d6832b11be2fd54a11bb477fb7"
+    },
+    "ErdosProblems.Erdos58.Structural.TwoLinkage": {
+      "path": "ErdosProblems/Erdos58/Structural/TwoLinkage.lean",
+      "sha256": "3669b5dbc18b8bcbdd8fa17ab2e1639d23f04aacc100121ef5e2618fd07977af"
+    },
+    "ErdosProblems.Erdos58.Linkage": {
+      "path": "ErdosProblems/Erdos58/Linkage.lean",
+      "sha256": "31c419daa9d4ae5ff110f1771428be5a3dfd8335331a9f45a558655c591dda84"
+    },
+    "ErdosProblems.Erdos767.Case1Count": {
+      "path": "ErdosProblems/Erdos767/Case1Count.lean",
+      "sha256": "dac892c84d51aafafb71131e25289bd4d18df652d0d14bd06c325a51b14b06ad"
+    },
+    "ErdosProblems.Erdos767.Case1Core": {
+      "path": "ErdosProblems/Erdos767/Case1Core.lean",
+      "sha256": "97c8136245762a4cc15b49b97e02d8016a9b14e2c1fa8b09372d77436c984689"
+    },
+    "ErdosProblems.Erdos767.NoConsecutive": {
+      "path": "ErdosProblems/Erdos767/NoConsecutive.lean",
+      "sha256": "4cc50bdd6cc69ed78b896425eb182f4f556fc1ca55c87821eab1d3d8dabe566b"
+    },
+    "ErdosProblems.Erdos767.Lollipop": {
+      "path": "ErdosProblems/Erdos767/Lollipop.lean",
+      "sha256": "a985c8e88026787d23300f9cabe3033e29b7a6bda71c6dfe30f66ed8857ef3cf"
+    },
+    "ErdosProblems.Erdos767.LongestCycle": {
+      "path": "ErdosProblems/Erdos767/LongestCycle.lean",
+      "sha256": "27f3a690bc7dc690b56f24ed5c37c9a79e9923b2a7e24586895c8bb5d83b6395"
+    },
+    "ErdosProblems.Erdos767.Build": {
+      "path": "ErdosProblems/Erdos767/Build.lean",
+      "sha256": "3fc85fca247fa045638b8d0890a2fcf90409066b2bd616a8f2e10878e2a43b99"
+    },
+    "ErdosProblems.Erdos767.Case1": {
+      "path": "ErdosProblems/Erdos767/Case1.lean",
+      "sha256": "4f3a0a1c9677e3f2e328fc5a1d14794f22d285dcfb6c7634cafdfb6944c64ac6"
+    },
+    "ErdosProblems.Erdos767.Case2Body": {
+      "path": "ErdosProblems/Erdos767/Case2Body.lean",
+      "sha256": "2204851d449aeb8c332e03481e19c69f28a05c7ce9a69e038082bb816e026f20"
+    },
+    "ErdosProblems.Erdos767.SplicePath": {
+      "path": "ErdosProblems/Erdos767/SplicePath.lean",
+      "sha256": "7a0af5337780a0bca5fe949cc2e6636ef944dd96a3e6b7221524c808534cba7c"
+    },
+    "ErdosProblems.Erdos767.Case2TailData": {
+      "path": "ErdosProblems/Erdos767/Case2TailData.lean",
+      "sha256": "26c9aa2c6ccb1c67ea1544bab8abdd18c0943f5ababae6165b3faea7868d6e1d"
+    }
+  }
+}
